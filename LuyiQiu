@@ -1,9 +1,9 @@
-git clone https://github.com/LuyiQiu/LuyiQiu.github.io
-cd LuyiQiu.github.io
+~ $ git clone https://github.com/LuyiQiu/LuyiQiu.github.io
+~ $ cd LuyiQiu.github.io
 
-echo "Hello World" > index.html
-git add --all
+~ $ echo "Hello World" > index.html
+~ $ git add --all
 
-git commit -m "Initial commit"
+~ $ git commit -m "Initial commit"
 
-git push -u origin master
+~ $ git push -u origin master
