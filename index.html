@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luyi Qiu</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --bg: #ffffff;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    .contact {
+      margin-top: 14px;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .contact a,
+    nav a,
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover,
+    nav a:hover,
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      font-size: 0.98rem;
+    }
+
+    section {
+      margin-bottom: 42px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .note {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin-top: 16px;
+      font-size: 0.98rem;
+    }
+
+    .pub-list,
+    .talk-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pub-list li,
+    .talk-list li {
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #eef2f7;
+    }
+
+    .pub-list li:last-child,
+    .talk-list li:last-child {
+      border-bottom: none;
+    }
+
+    .paper-title {
+      font-weight: 700;
+    }
+
+    .paper-meta,
+    .talk-meta {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-top: 3px;
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 680px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .container {
+        padding: 28px 18px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Luyi Qiu</h1>
+      <div class="subtitle">
+        Ph.D. Candidate in Applied Physics, Harvard University
+      </div>
+      <div class="contact">
+        <a href="mailto:lqiu@g.harvard.edu">lqiu@g.harvard.edu</a>
+        &nbsp;|&nbsp; 29 Oxford Street, Cambridge, MA 02138
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#talks">Talks</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <a href="cv.pdf">CV</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Ph.D. candidate in Applied Physics at Harvard University, working with
+        Ariel Amir. My research is in theoretical biophysics and soft condensed matter,
+        with interests in the physics of living systems, cellular mechanics, and
+        nonequilibrium phenomena.
+      </p>
+      <p>
+        My work combines physical modeling, elasticity theory, stochastic processes,
+        and applied mathematics to study biological systems across scales. Recent
+        projects include chromosome segregation, spindle checkpoint dynamics, and the
+        mechanics and morphology of bacterial cells.
+      </p>
+      <div class="note">
+        Previously, I received my B.Sc. in Physics from Peking University.
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        Broadly, I am interested in how physical principles shape biological function.
+        My current and recent research themes include:
+      </p>
+      <ul>
+        <li>Chromosome segregation and first-passage problems in cell division.</li>
+        <li>Spindle assembly checkpoint dynamics and error-correction mechanisms.</li>
+        <li>Mechanical instabilities in rod-shaped bacteria.</li>
+        <li>Pressure-induced morphology and wrinkling in biological and elastic tubular structures.</li>
+        <li>Shape formation in helical bacterial cells.</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <ul class="pub-list">
+        <li>
+          <div class="paper-title">
+            <a href="https://doi.org/10.64898/2026.03.10.710927">
+              Distinguishing defects in error correction vs. defects in the spindle assembly checkpoint
+            </a>
+          </div>
+          <div>Gloria Ha, <strong>Luyi Qiu</strong>, Ariel Amir, Daniel J. Needleman</div>
+          <div class="paper-meta"><em>bioRxiv</em>, 2026</div>
+        </li>
+
+        <li>
+          <div class="paper-title">
+            <a href="https://doi.org/10.1103/PhysRevE.111.L013502">
+              Mechanics and wrinkling patterns of pressurized bent tubes
+            </a>
+          </div>
+          <div>César L. Pastrana, <strong>Luyi Qiu</strong>, John W. Hutchinson, Ariel Amir, Ulrich Gerland</div>
+          <div class="paper-meta"><em>Physical Review E</em> 111, L013502 (2025)</div>
+        </li>
+
+        <li>
+          <div class="paper-title">
+            <a href="https://www.biorxiv.org/content/10.1101/2023.06.05.543640v2">
+              Dual mechanism of kinetochore microtubule detachment
+            </a>
+          </div>
+          <div>William Conway, Gloria Ha, <strong>Luyi Qiu</strong>, Ariel Amir, Daniel J. Needleman</div>
+          <div class="paper-meta"><em>bioRxiv</em>, 2025</div>
+        </li>
+
+        <li>
+          <div class="paper-title">
+            <a href="https://doi.org/10.1039/D2SM01044E">
+              Pressure-induced Shape-shifting of Helical Bacteria
+            </a>
+          </div>
+          <div>César L. Pastrana*, <strong>Luyi Qiu</strong>*, Shahaf Armon, Ulrich Gerland, Ariel Amir</div>
+          <div class="paper-meta"><em>Soft Matter</em> 19, 2224 (2023) &nbsp;|&nbsp; *Equal contribution</div>
+        </li>
+
+        <li>
+          <div class="paper-title">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.128.058101">
+              Bending instability of rod-shaped bacteria
+            </a>
+          </div>
+          <div><strong>Luyi Qiu</strong>, John W. Hutchinson, Ariel Amir</div>
+          <div class="paper-meta">
+            <em>Physical Review Letters</em> 128, 058101 (2022)
+            &nbsp;|&nbsp;
+            <a href="https://physics.aps.org/articles/v15/s14">APS Physics synopsis</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper-title">
+            <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.011026">
+              Magnon transport in quasi-two-dimensional van der Waals 2D antiferromagnets
+            </a>
+          </div>
+          <div>Wenyu Xing, <strong>Luyi Qiu</strong>, Xirui Wang, Yunyan Yao, Yang Ma, Ranran Cai, Shuang Jia, X. C. Xie, Wei Han</div>
+          <div class="paper-meta"><em>Physical Review X</em> 9, 011026 (2019)</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards and Support</h2>
+      <ul>
+        <li>QBio Student Award, NSF-Simons Center at Harvard University (2022–2023)</li>
+        <li>Physics of Living System HF-SRN Project, NSF/PoLS Program (2022–2023)</li>
+      </ul>
+    </section>
+
+    <section id="talks">
+      <h2>Selected Talks and Presentations</h2>
+      <ul class="talk-list">
+        <li>
+          <div>SIAM — “First passage time problem in chromosome segregation”</div>
+          <div class="talk-meta">Denver, 2025</div>
+        </li>
+        <li>
+          <div>APS March Meeting — “Mechanics and wrinkling patterns of pressurized bent tubes”</div>
+          <div class="talk-meta">Los Angeles, 2025</div>
+        </li>
+        <li>
+          <div>Boulder Summer School — “Mechanics and wrinkling patterns of pressurized bent tubes” (poster)</div>
+          <div class="talk-meta">Colorado, 2024</div>
+        </li>
+        <li>
+          <div>AM+ Graduate Seminar — “First passage time problem in chromosome segregation”</div>
+          <div class="talk-meta">Harvard, 2024</div>
+        </li>
+        <li>
+          <div>Gordon Research Conference on Bacterial Cell Biology and Development — “Bacterial shape: instabilities of rod-shaped cells and formation of helices”</div>
+          <div class="talk-meta">New Hampshire, 2023</div>
+        </li>
+        <li>
+          <div>Physics of Living Systems Short Talk Series — “Bacterial shape: instabilities of rod-shaped cells and formation of helices”</div>
+          <div class="talk-meta">MIT, 2023</div>
+        </li>
+        <li>
+          <div>Kavli Seminar — “Pressure-induced shape-shifting of helical bacteria”</div>
+          <div class="talk-meta">Harvard, 2023</div>
+        </li>
+        <li>
+          <div>Invited Talk at Westlake University — “Bacterial shape: instabilities of rod-shaped cells and formation of helices”</div>
+          <div class="talk-meta">Hangzhou, China, 2023</div>
+        </li>
+        <li>
+          <div>APS March Meeting — “Modeling helical shape formation in bacteria”</div>
+          <div class="talk-meta">Chicago, 2022</div>
+        </li>
+        <li>
+          <div>APS March Meeting — “Bending instability of rod-shaped bacteria”</div>
+          <div class="talk-meta">Virtual, 2021</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>
+        <strong>Teaching Assistant</strong>, Harvard University
+      </p>
+      <ul>
+        <li>Applied Math 203: Introduction to Disordered Systems and Stochastic Processes (Fall 2021)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lqiu@g.harvard.edu">lqiu@g.harvard.edu</a></p>
+      <p>Address: 29 Oxford Street, Cambridge, MA 02138</p>
+      <p class="links">
+        You can also add links here to
+        <a href="#">Google Scholar</a>,
+        <a href="#">ORCID</a>,
+        <a href="#">GitHub</a>,
+        or
+        <a href="#">LinkedIn</a>.
+      </p>
+    </section>
+
+    <footer>
+      Last updated: March 2026
+    </footer>
+  </div>
+</body>
+</html>
